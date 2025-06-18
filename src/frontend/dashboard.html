@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+<body>
+  <h1>Welcome, <span id="email">loading...</span></h1>
+
+  <script>
+    const supabase = supabase.createClient(
+      'https://hlskbmcsrcjobvknrrhj.supabase.co',
+      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhsc2tibWNzcmNqb2J2a25ycmhqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDg3NTQ3MjcsImV4cCI6MjA2NDMzMDcyN30.S3ejjjORIEeo2ssh0N_DSYXEbBNg-4CMJN6q98Ooa4w'
+    );
+
+    supabase.auth.getUser().then(({ data: { user }, error }) => {
+      if (error) {
+        document.getElementById('email').innerText = 'Error loading user';
+      } else {
+        document.getElementById('email').innerText = user.email || 'No email found';
+      }
+    });
+  </script>
+</body>
+</html>

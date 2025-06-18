@@ -1,0 +1,162 @@
+# ─────────────────────────
+# 🌍 Global OS + Editor
+# ─────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+*.log
+*.lock
+*.sqlite3
+
+# ─────────────────────────
+# 🔐 Secrets & Environment
+# ─────────────────────────
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.crt
+*.cert
+*.cfg
+secrets/
+config.local.*
+.envrc
+.vault-token
+.n8n/
+
+# ─────────────────────────
+# 🧠 Python / FastAPI
+# ─────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+.cache/
+.coverage
+.tox/
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+pip-wheel-metadata/
+.site/
+.venv/
+venv/
+env/
+ENV/
+
+# ─────────────────────────
+# 🧩 Node.js / JavaScript
+# ─────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+.pnpm-debug.log
+.vite/
+.next/
+.nuxt/
+out/
+coverage/
+.cache/
+.eslintcache
+turbo/
+dist/
+
+# ─────────────────────────
+# 📦 Docker
+# ─────────────────────────
+*.tar
+*.img
+*.container
+*.pid
+docker-compose.override.yml
+docker-compose.*.yml
+.dockerignore
+Dockerfile*
+*.sock
+
+# ─────────────────────────
+# 🎨 Frontend Frameworks
+# ─────────────────────────
+public/build/
+build/
+*.map
+*.bundle.js
+*.css.map
+*.js.map
+*.tsbuildinfo
+
+# ─────────────────────────
+# 🔧 VSCode / JetBrains
+# ─────────────────────────
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-workspace
+*.sublime-project
+
+# ─────────────────────────
+# 🚀 Supabase & Bolt.new Specific
+# ─────────────────────────
+.supabase/
+supabase/.temp/
+supabase/migrations/
+.supabase/config.json
+bolt-output/
+bolt-cache/
+bolt.deploy.*
+build.log
+
+# ─────────────────────────
+# 📚 Docs & Extras
+# ─────────────────────────
+*.pdf
+*.docx
+*.pptx
+__MACOSX/
+tmp/
+logs/
+*.csv
+*.xls*
+*.ipynb_checkpoints
+
+# ─────────────────────────
+# 🔍 Tests
+# ─────────────────────────
+tests/__pycache__/
+tests/*.log
+test-results/
+junit.xml
+pytest-debug.log
+
+# ─────────────────────────
+# 🧠 AI / OpenAI / Agents
+# ─────────────────────────
+agents_cache/
+agents_output/
+agent_logs/
+*.llm
+*.agent
+local.db
+session.json
+history.json
+
+# ─────────────────────────
+# 🚧 Experimental
+# ─────────────────────────
+.sonar/
+*.bak
+scratch/
+drafts/
+playground/
