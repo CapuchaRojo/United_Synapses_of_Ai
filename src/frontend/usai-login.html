@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Login with GitHub</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+</head>
+
+<body>
+
+  <h1>🔐 Login</h1>
+
+  <button id="loginBtn">Login with GitHub</button>
+
+
+
+  <script>
+
+    const supabase = supabase.createClient(
+
+      'https://hlskbmcsrcjobvknrrhj.supabase.co',
+
+      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhsc2tibWNzcmNqb2J2a25ycmhqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDg3NTQ3MjcsImV4cCI6MjA2NDMzMDcyN30.S3ejjjORIEeo2ssh0N_DSYXEbBNg-4CMJN6q98Ooa4w'
+
+    );
+
+
+
+    document.getElementById('loginBtn').addEventListener('click', () => {
+
+      supabase.auth.signInWithOAuth({
+
+        provider: 'github',
+
+      });
+
+    });
+
+  </script>
+
+</body>
+
+</html>
